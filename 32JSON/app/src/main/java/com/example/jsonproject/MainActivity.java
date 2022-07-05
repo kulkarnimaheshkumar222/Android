@@ -66,7 +66,14 @@ public class MainActivity extends AppCompatActivity {
         String json = gson.toJson(student);
         Log.d("TEST",json);
 */
-        String json = "{\"course_Count\":10,\"email\":\"mahesh@gmail.com\",\"course\":{\"description\":\"Android Course Desscription\",\"name\":\"Android\"},\"video\":[{\"duration\":4,\"name\":\"Intro1\"},{\"duration\":14,\"name\":\"Intro2\"},{\"duration\":24,\"name\":\"Intro3\"},{\"duration\":34,\"name\":\"Intro4\"},{\"duration\":44,\"name\":\"Intro5\"}],\"name\":\"Mahesh\"}";
+        String json = "{\"course_Count\":10,\"email\":\"mahesh@gmail.com\"," +
+                "\"course\":{\"description\":\"Android Course Desscription\",\"name\":\"Android\"}," +
+                "\"video\":[{\"duration\":4,\"name\":\"Intro1\"}," +
+                "{\"duration\":14,\"name\":\"Intro2\"}," +
+                "{\"duration\":24,\"name\":\"Intro3\"}," +
+                "{\"duration\":34,\"name\":\"Intro4\"}," +
+                "{\"duration\":44,\"name\":\"Intro5\"}]," +
+                "\"name\":\"Mahesh\"}";
 
         Student student = gson.fromJson(json,Student.class);
         Log.d("TEST",student.toString());
