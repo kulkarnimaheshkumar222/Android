@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/timestamp_layout_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:background="@color/purple_500"
+        >
+        <TextView
+            android:id="@+id/date_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="20"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/monthYear_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="March-2020"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/time_textView_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="1.20am"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_weight="2"
+        android:layout_toRightOf="@id/timestamp_layout_id"
+        >
+        <TextView
+            android:id="@+id/title_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Transportation Alert"
+            android:textColor="#68B6D6"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:id="@+id/subtitle_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Transportation Alert"
+            android:textColor="@color/purple_200"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/description_textView_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Transportation Alert"
+            android:textColor="@color/purple_200"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            tools:text="@tools:sample/lorem/random"
+            />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
